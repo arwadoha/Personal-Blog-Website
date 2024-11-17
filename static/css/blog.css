@@ -1,0 +1,35 @@
+/* Blog Page Styles */
+
+.related-articles {
+    margin-top: 2rem;
+  }
+  
+  .related-articles ul {
+    list-style: none;
+  }
+  
+  .related-articles li a {
+    color: #2980b9;
+    text-decoration: underline;
+  }
+  
+  .related-articles li a:hover {
+    color: #1abc9c;
+  }
+  .post-list {
+    margin-top: 2rem;
+  }
+  
+  .post-list article {
+    margin-bottom: 2rem;
+  }
+  
+  .post-list h2 a {
+    color: #1c567e;
+    margin-top: 50px;
+    text-decoration: none;
+  }
+  
+  .post-list h2 a:hover {
+    color: #1abc9c;
+  }
