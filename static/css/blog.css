@@ -33,3 +33,36 @@
   .post-list h2 a:hover {
     color: #1abc9c;
   }
+
+/* Author Info Styles */
+.author-info {
+  margin: 2rem 0; 
+  text-align: center; 
+}
+
+.author-avatar {
+  display: inline-block; 
+}
+
+.avatar-img {
+  width: 100px; 
+  height: auto; 
+  border-radius: 50%; 
+}
+
+/* Social Sharing Styles */
+.social-sharing {
+  margin: 2rem 0; 
+  text-align: center; 
+}
+
+.social-icon {
+  width: 30px; 
+  height: auto; 
+  margin: 0 0.5rem; 
+  transition: transform 0.3s; 
+}
+
+.social-icon:hover {
+  transform: scale(1.1); 
+}
