@@ -6,8 +6,6 @@
 @import 'about.css';          
 @import 'contact.css';        
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -20,13 +18,21 @@ body {
   line-height: 1.6;
   color: #333333;
   background-color: #fff;
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Footer Styles */
-
 footer {
+  display: grid;
   text-align: center;
-  padding: 1rem;
+  padding: 0.1rem;
   background-color: #375777;  
 
   p{
@@ -34,17 +40,36 @@ footer {
   }
 }
 
+@media (max-width: 767px) {
+  /* Small screen */
+  .post-cards {
+    grid-template-columns: 1fr;
+  }
 
-/* Responsive Styles */
+  .card {
+    padding: 10px;
+  }
 
-@media (min-width: 768px) {
-  body {
-    font-size: 18px;
+  .intro-section {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  nav ul {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    width: 100%;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Tablet */
   body {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  .post-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -1,12 +1,14 @@
 header {
   background-color: #2980b9;
   padding: 1rem;
+  width: 100%;
 }
 
 nav {
   display: flex;
   justify-content: center;
-  
+  padding: 0;
+  width: 100%;
 }
 
 nav ul {
@@ -28,6 +30,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  flex: 1;
 }
 
 .post-cards {
